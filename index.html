@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Home</title>
+    <style type="text/css" media="all">
+        @import "css/master.css";
+    </style>
+</head>
+<body>
+    <div id="page-container">
+        <div id="header"><img src="images/soloLborder.jpg" alt="banner" /></div>
+        <div id="sidebar"></div>
+        <div id="content">
+
+            <h1 id="dynamic-header">Solo Leveling</h1>
+
+            <a href="manga.html" class="hover-trigger-btn" id="mangaBtn">Manhwa</a>
+            <a href="characters.html" class="hover-trigger-btn" id="charactersBtn">Characters</a>
+            <a href="author.html" class="hover-trigger-btn" id="authorBtn">Author</a>
+            <a href="About.html" class="hover-trigger-btn" id="aboutBtn">About Us</a>
+
+            <!-- Intra-site links -->
+            <a href="#intrasite1" class="intrasite-link">Intrasite Link 1</a>
+            <a href="#intrasite2" class="intrasite-link">Intrasite Link 2</a>
+
+            <!-- Extra-site links -->
+            <a href="http://external-site.com" class="extrasite-link" target="_blank">External Site 1</a>
+            <a href="http://another-external-site.com" class="extrasite-link" target="_blank">External Site 2</a>
+
+        </div>
+    </div>
+    <form action="/submit" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required=required />
+
+        <br />
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required=required />
+
+        <br />
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required=required />
+
+        <br />
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <label>
+            <input type="radio" name="gender" value="male" required=required /> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" required=required /> Female
+        </label>
+
+        <br />
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <label>
+            <input type="checkbox" name="interests[]" value="coding" /> Coding
+        </label>
+        <label>
+            <input type="checkbox" name="interests[]" value="reading" /> Reading
+        </label>
+        <label>
+            <input type="checkbox" name="interests[]" value="traveling" /> Traveling
+        </label>
+
+        <br />
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function handleMouseEnter(event) {
+            event.target.style.backgroundColor = '#3367d6';
+        }
+
+        function handleMouseLeave(event) {
+            event.target.style.backgroundColor = '#4285f4';
+        }
+
+        // Adding event listeners to the navigation buttons
+        document.getElementById('mangaBtn').addEventListener('mouseenter', handleMouseEnter);
+        document.getElementById('mangaBtn').addEventListener('mouseleave', handleMouseLeave);
+
+        document.getElementById('charactersBtn').addEventListener('mouseenter', handleMouseEnter);
+        document.getElementById('charactersBtn').addEventListener('mouseleave', handleMouseLeave);
+
+        document.getElementById('authorBtn').addEventListener('mouseenter', handleMouseEnter);
+        document.getElementById('authorBtn').addEventListener('mouseleave', handleMouseLeave);
+
+        document.getElementById('aboutBtn').addEventListener('mouseenter', handleMouseEnter);
+        document.getElementById('aboutBtn').addEventListener('mouseleave', handleMouseLeave);
+    </script>
+</body>
+</html>

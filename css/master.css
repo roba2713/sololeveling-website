@@ -1,0 +1,95 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+}
+
+    #header img {
+        width: 100%;
+        height: auto;
+    }
+
+#sidebar {
+    float: left; /* Float the sidebar to the left */
+    width: 30%; /* Adjust width as needed */
+    background-color: #ddd; /* Placeholder background color */
+    margin-right: 20px; /* Add some margin for spacing */
+}
+
+#dynamic-header {
+    text-align: center;
+    color: peachpuff;
+}
+
+#content {
+    padding: 20px;
+    overflow: hidden; /* Clear the float */
+}
+
+.hover-trigger-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #purple, #black);
+    -webkit-background-clip: border-box;
+    color: peachpuff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+    .hover-trigger-btn:hover {
+        background: linear-gradient(to right, #black, #blue);
+        -webkit-background-clip: border-box;
+    }
+form {
+    margin-top: 20px; /* Add margin to separate the form from the previous content */
+}
+
+    form label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    form input,
+    form button {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+#menu {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        padding: 15px;
+    }
+
+    #dropdown-menu {
+        margin-top: 10px;
+    }
+
+    #content {
+        padding: 10px;
+    }
+}
